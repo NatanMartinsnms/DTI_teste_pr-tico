@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>TESTE PRÁTICO DTI</title>
+    <style>
+        .bg-green-fluor{
+            background:#ccff33;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    
+    <div class="container-fluid bg-dark text-light">
+        <div class="row">
+            <div class="col-sm-12 bg-green-fluor">
+                <h1 class="text-center text-dark">
+                    TESTE PRÁTICO -- DTI
+                </h1>
+            </div>
+           
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="padding:50px;">
+                <div class="box">
+                    <label for="data">Selecione uma data :</label><br>
+                    <input class="form-control" type="date" name="input-date" id="input-date"> <br><br>
+
+                    <label for="qtd-pequenos">Quantidade de animais de porte pequeno:</label>
+                    <input class="form-control" type="number" name="qtd-pequenos" id="qtd-pequenos" ><br><br>
+
+                    <label for="qtd-grandes">Quantidade de animais de porte grande:</label>
+                    <input class="form-control" type="number" name="qtd-grandes" id="qtd-grandes">
+                    <br><br>
+                    <button id="btn-search">Buscar PetShop</button>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div id="resultados" class="col-sm-6 bg-warning text-dark">
+                <h2 class="text-center ">Resultado</h2>
+                <hr>
+               
+                <div id="lista">
+                    <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">TITULO</h4>
+                          <h6>Tem o melhor custo benefício</h6>
+                          <p class="card-text text-center">
+                            <a href="#" class="card-link">
+                                <h2>
+                                    <span class="badge badge-secondary">Valor total: <sup>R$</sup> 
+                                    <strong id="Total">00,00</strong> </span>
+                                </h2>
+                              </a>
+                          </p>
+                         
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="fn.js"></script>
+</body>
+</html>
